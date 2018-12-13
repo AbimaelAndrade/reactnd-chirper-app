@@ -15,6 +15,41 @@ a {
   color: #252525;
 }
 
+.repo-github {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.link-repo {
+  background-color: rgba(0, 0, 0, 0.8);
+  transform-origin: center;
+  transform: rotate(45deg);
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  right: -45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.link-repo svg {
+  transform: rotate(-45deg);
+}
+
 .container {
   max-width: 1000px;
   margin: 0 auto;

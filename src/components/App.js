@@ -7,6 +7,7 @@ import TweetPage from "./TweetPage";
 import NewTweet from "./NewTweet";
 import Nav from "./Nav";
 import LoadingBar from "react-redux-loading";
+import Github from "./Github";
 
 class App extends Component {
   componentDidMount() {
@@ -20,6 +21,11 @@ class App extends Component {
           <LoadingBar />
           <div className="container">
             <Nav />
+            <Github
+              repo="https://github.com/abimaelandrade/reactnd-chirper-app.git"
+              size={32}
+              color={"#fff"}
+            />
             {this.props.loading === true ? null : (
               <div>
                 <Route path="/" exact component={Dashboad} />
